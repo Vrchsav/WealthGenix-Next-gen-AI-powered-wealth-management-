@@ -1,24 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Wealthgenix
 
-## Getting Started
+Wealthgenix is a web application built with Next.js, React, and Tailwind CSS. It provides a platform for managing and visualizing financial data.
 
-First, run the development server:
+## Table of Contents
+
+- [Installation](#installation)
+- [Scripts](#scripts)
+- [Dependencies](#dependencies)
+- [Dev Dependencies](#dev-dependencies)
+- [Usage](#usage)
+- [Learn More](#learn-more)
+- [Deploy on Vercel](#deploy-on-vercel)
+- [License](#license)
+- [Changelog](#changelog)
+
+## Installation
+
+To install the project dependencies, run:
+
+```bash
+npm install
+```
+
+## Scripts
+
+- `dev`: Starts the development server with Turbopack.
+- `build`: Builds the application for production.
+- `start`: Starts the production server.
+- `lint`: Runs ESLint to check for linting errors.
+
+## Dependencies
+
+- `@radix-ui/react-checkbox`: ^1.1.3
+- `@radix-ui/react-dialog`: ^1.1.4
+- `@radix-ui/react-dropdown-menu`: ^2.1.4
+- `@radix-ui/react-popover`: ^1.1.4
+- `@radix-ui/react-progress`: ^1.1.1
+- `@radix-ui/react-select`: ^2.1.4
+- `@radix-ui/react-slot`: ^1.1.1
+- `@radix-ui/react-switch`: ^1.1.2
+- `@radix-ui/react-tooltip`: ^1.1.6
+- `class-variance-authority`: ^0.7.1
+- `clsx`: ^2.1.1
+- `date-fns`: ^4.1.0
+- `lucide-react`: ^0.473.0
+- `next`: 15.1.5
+- `react`: ^19.0.0
+- `react-day-picker`: ^8.10.1
+- `react-dom`: ^19.0.0
+- `tailwind-merge`: ^2.6.0
+- `tailwindcss-animate`: ^1.0.7
+- `vaul`: ^1.1.2
+
+## Dev Dependencies
+
+- `@eslint/eslintrc`: ^3
+- `eslint`: ^9
+- `eslint-config-next`: 15.1.5
+- `postcss`: ^8
+- `tailwindcss`: ^3.4.1
+
+## Usage
+
+To start the development server, run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To build the application for production, run:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To start the production server, run:
+
+```bash
+npm start
+```
+
+To lint the code, run:
+
+```bash
+npm run lint
+```
 
 ## Learn More
 
@@ -34,3 +100,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Changelog
+
+### v0.1.0
+
+- Initial release with basic setup and dependencies.
+- Added Footer component.
+- Updated `package.json` with new dependencies.
+- Created `README.md` with project information and usage instructions.
