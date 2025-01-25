@@ -31,6 +31,7 @@ npm install
 
 ## Dependencies
 
+- `@clerk/nextjs`: ^6.9.15
 - `@radix-ui/react-checkbox`: ^1.1.3
 - `@radix-ui/react-dialog`: ^1.1.4
 - `@radix-ui/react-dropdown-menu`: ^2.1.4
@@ -57,8 +58,8 @@ npm install
 - `@eslint/eslintrc`: ^3
 - `eslint`: ^9
 - `eslint-config-next`: 15.1.5
-- `postcss`: ^8
-- `tailwindcss`: ^3.4.1
+- `postcss`: ^8.5.1
+- `tailwindcss`: ^3.4.17
 
 ## Usage
 
@@ -113,3 +114,18 @@ This project is licensed under the MIT License.
 - Added Footer component.
 - Updated `package.json` with new dependencies.
 - Created `README.md` with project information and usage instructions.
+
+### v0.2.0
+
+- Added `Header` component with authentication and navigation links.
+- Added `ModeToggle` component for dark mode support.
+- Updated `Footer` component with additional links and social media icons.
+- Updated `Home` page with a button component.
+- Updated `tailwind.config.js` to include the correct paths for content.
+
+### v0.3.0
+
+- Updated `Header` component to include logo and additional navigation links.
+- Updated `Footer` component with newsletter subscription form.
+- Updated `Home` page with a new button text.
+- Updated `package.json` with `@clerk/nextjs` dependency.
