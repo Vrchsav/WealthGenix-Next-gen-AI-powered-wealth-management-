@@ -7,32 +7,33 @@ import { LayoutDashboard, PenBox } from 'lucide-react';
 
 const Header = () => {
     return (
-        <header className="fixed top-0 w-full bg-white shadow-md">
-            <nav className="container mx-auto flex items-center justify-between py-4 px-6">
-                {/* Logo */}
-                <Link href="/" className="flex items-center">
+        <header className="fixed top-0 w-full bg-white shadow-md z-50">
+            <nav className="container mx-auto max-w-7xl flex items-center justify-between py-3 px-8">
+                
+                {/* Logo with Adjusted Size */}
+                <Link href="/" className="flex items-center pr-6">
                     <Image
                         src="/logo.png"
                         alt="WealthGenix"
-                        height={100}
-                        width={300}
-                        className="h-20 w-auto object-contain"
+                        height={100}   // Adjusted height
+                        width={250}    // Adjusted width
+                        className="h-20 w-auto object-contain transition-transform hover:scale-105"
                     />
                 </Link>
 
-                {/* Navigation Links */}
-                <div className="flex items-center gap-4">
+                {/* Navigation Links with Proper Spacing */}
+                <div className="flex items-center gap-6 pl-6">
                     <SignedIn>
                         <Link href="/dashboard">
-                            <Button variant="outline" className="flex items-center gap-2">
-                                <LayoutDashboard size={22} />
+                            <Button variant="outline" className="flex items-center gap-2 hover:bg-gray-100 transition-all">
+                                <LayoutDashboard size={20} />
                                 <span className="hidden md:inline">Dashboard</span>
                             </Button>
                         </Link>
 
                         <Link href="/transaction/create">
-                            <Button className="flex items-center gap-2">
-                                <PenBox size={22} />
+                            <Button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 transition-all text-white">
+                                <PenBox size={20} />
                                 <span className="hidden md:inline">Add Transaction</span>
                             </Button>
                         </Link>
@@ -40,16 +41,16 @@ const Header = () => {
 
                     <SignedOut>
                         <SignInButton forceRedirectUrl="/dashboard">
-                            <Button variant="outline">Login</Button>
+                            <Button variant="outline" className="hover:bg-gray-100 transition-all">Login</Button>
                         </SignInButton>
                     </SignedOut>
 
                     <SignedIn>
                         <UserButton appearance={{
                             elements: {
-                                avatarBox: "w-10 h-10",
+                                avatarBox: "w-9 h-9",
                             },
-                        }}/>
+                        }} />
                     </SignedIn> 
                 </div>
             </nav>
