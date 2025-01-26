@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="pt-40 w-full bg-gradient-to-br from-blue-50 to-white text-center py-20 px-4 pb-20">
+    <section className="pt-40 w-full  text-center py-20 px-4 pb-20">
       <div className="container mx-auto max-w-4xl flex flex-col items-center">
         
         {/* Hero Text */}
