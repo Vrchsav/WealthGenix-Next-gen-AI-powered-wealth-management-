@@ -129,3 +129,11 @@ This project is licensed under the MIT License.
 - Updated `Footer` component with newsletter subscription form.
 - Updated `Home` page with a new button text.
 - Updated `package.json` with `@clerk/nextjs` dependency.
+
+### v0.4.0
+
+- Added `Profile` page with user information and settings.
+- Updated `Header` component with user avatar and dropdown menu.
+- Updated `Footer` component with updated links and copyright information.
+- Updated `Home` page with new sections and improved layout.
+- Updated `tailwind.config.js` with new theme configurations.
