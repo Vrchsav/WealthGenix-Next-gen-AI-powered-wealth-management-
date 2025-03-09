@@ -10,7 +10,7 @@ Wealthgenix is a comprehensive financial management application that leverages A
 - [API Endpoints](#api-endpoints)
 - [Environment Variables](#environment-variables)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
@@ -232,12 +232,7 @@ Contributions are welcome! Please follow these steps to contribute:
 5. Push to the branch (`git push origin feature-branch`).
 6. Open a pull request.
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.# Full Stack AI Fianace Platform with Next JS, Supabase, Tailwind, Prisma, Inngest, ArcJet, Shadcn UI Tutorial 🔥🔥
-## https://youtu.be/egS6fnZAdzk
-
-<img width="1470" alt="Screenshot 2024-12-10 at 9 45 45 AM" src="https://github.com/user-attachments/assets/1bc50b85-b421-4122-8ba4-ae68b2b61432">
 
 ### Make sure to create a `.env` file with following variables -
 
