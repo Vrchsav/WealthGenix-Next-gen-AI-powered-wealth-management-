@@ -1,6 +1,6 @@
-# Wealthgenix
+# WealthGenix
 
-Wealthgenix is a comprehensive financial management application that leverages AI to help users manage their finances effectively. The platform includes features such as transaction management, budget tracking, receipt scanning, and more.
+WealthGenix is a next-generation AI-powered wealth management platform that leverages artificial intelligence to help users manage their finances effectively. The platform includes advanced features such as intelligent transaction management, predictive budget tracking, AI-powered receipt scanning, and personalized financial insights.
 
 ## Table of Contents
 
@@ -11,140 +11,23 @@ Wealthgenix is a comprehensive financial management application that leverages A
 - [Environment Variables](#environment-variables)
 - [Contributing](#contributing)
 
-
 ## Features
 
-- **User Authentication**: Secure user authentication using Clerk.
-- **Transaction Management**: Create, update, and delete transactions.
-- **Budget Tracking**: Set and track monthly budgets.
-- **Receipt Scanning**: Scan receipts and extract transaction details using Google Generative AI.
-- **Email Notifications**: Send email notifications using Resend.
-- **Rate Limiting**: Protect endpoints with rate limiting using ArcJet.
+- **AI-Powered Financial Analysis**: Advanced analytics using Google's Generative AI to provide personalized financial insights and recommendations.
+- **Secure User Authentication**: Enterprise-grade security using Clerk authentication system.
+- **Smart Transaction Management**: Intelligent categorization and tracking of income and expenses.
+- **Predictive Budget Tracking**: AI-driven budget recommendations and spending pattern analysis.
+- **Automated Receipt Processing**: Instant receipt scanning and data extraction using Google Generative AI.
+- **Real-time Email Notifications**: Automated financial alerts and reports using Resend service.
+- **Enterprise-Grade Security**: Rate limiting protection using ArcJet.
+- **Multi-Currency Support**: Handle transactions in multiple currencies for international users.
 
 ## Installation
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Vrchsav/WealthGenix-Next-gen-AI-powered-wealth-management-.git    # AI Finance Platform
-    
-    AI Finance Platform is a comprehensive financial management application that leverages AI to help users manage their finances effectively. The platform includes features such as transaction management, budget tracking, receipt scanning, and more.
-    
-    ## Table of Contents
-    
-    - [Features](#features)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [API Endpoints](#api-endpoints)
-    - [Environment Variables](#environment-variables)
-    - [Contributing](#contributing)
-    - [License](#license)
-    
-    ## Features
-    
-    - **User Authentication**: Secure user authentication using Clerk.
-    - **Transaction Management**: Create, update, and delete transactions.
-    - **Budget Tracking**: Set and track monthly budgets.
-    - **Receipt Scanning**: Scan receipts and extract transaction details using Google Generative AI.
-    - **Email Notifications**: Send email notifications using Resend.
-    - **Rate Limiting**: Protect endpoints with rate limiting using ArcJet.
-    
-    ## Installation
-    
-    1. Clone the repository:
-        ```bash
-        git clone https://github.com/your-username/ai-finance-platform.git
-        cd ai-finance-platform
-        ```
-    
-    2. Install dependencies:
-        ```bash
-        npm install
-        ```
-    
-    3. Set up environment variables:
-        Create a `.env` file in the root directory and add the following variables:
-        ```env
-        GEMINI_API_KEY=your_gemini_api_key
-        RESEND_API_KEY=your_resend_api_key
-        CLERK_API_KEY=your_clerk_api_key
-        DATABASE_URL=your_database_url
-        ```
-    
-    4. Run the development server:
-        ```bash
-        npm run dev
-        ```
-    
-    ## Usage
-    
-    ### Authentication
-    
-    The application uses Clerk for user authentication. Users can sign in and manage their accounts securely.
-    
-    ### Transactions
-    
-    Users can create, update, and delete transactions. Transactions can be categorized as income or expense, and users can view their transaction history.
-    
-    ### Budget Tracking
-    
-    Users can set a monthly budget and track their expenses against the budget. The application provides insights into spending patterns.
-    
-    ### Receipt Scanning
-    
-    Users can upload receipt images, and the application will extract transaction details using Google Generative AI.
-    
-    ### Email Notifications
-    
-    The application can send email notifications for various events using the Resend service.
-    
-    ## API Endpoints
-    
-    ### Transactions
-    
-    - `POST /api/transactions`: Create a new transaction.
-    - `GET /api/transactions/:id`: Get details of a specific transaction.
-    - `PUT /api/transactions/:id`: Update a transaction.
-    - `DELETE /api/transactions/:id`: Delete a transaction.
-    
-    ### Accounts
-    
-    - `POST /api/accounts`: Create a new account.
-    - `GET /api/accounts`: Get a list of user accounts.
-    - `GET /api/accounts/:id`: Get details of a specific account.
-    - `PUT /api/accounts/:id`: Update an account.
-    - `DELETE /api/accounts/:id`: Delete an account.
-    
-    ### Budgets
-    
-    - `GET /api/budgets/current`: Get the current budget.
-    - `PUT /api/budgets`: Update the budget.
-    
-    ### Receipt Scanning
-    
-    - `POST /api/receipts/scan`: Scan a receipt and extract transaction details.
-    
-    ## Environment Variables
-    
-    - `GEMINI_API_KEY`: API key for Google Generative AI.
-    - `RESEND_API_KEY`: API key for Resend service.
-    - `CLERK_API_KEY`: API key for Clerk authentication.
-    - `DATABASE_URL`: URL for the database connection.
-    
-    ## Contributing
-    
-    Contributions are welcome! Please follow these steps to contribute:
-    
-    1. Fork the repository.
-    2. Create a new branch (`git checkout -b feature-branch`).
-    3. Make your changes.
-    4. Commit your changes (`git commit -m 'Add new feature'`).
-    5. Push to the branch (`git push origin feature-branch`).
-    6. Open a pull request.
-    
-    ## License
-    
-    This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-    cd ai-finance-platform
+    git clone https://github.com/Vrchsav/WealthGenix-Next-gen-AI-powered-wealth-management-.git
+    cd WealthGenix-Next-gen-AI-powered-wealth-management-
     ```
 
 2. Install dependencies:
@@ -152,104 +35,109 @@ Wealthgenix is a comprehensive financial management application that leverages A
     npm install
     ```
 
-3. Set up environment variables:
-    Create a `.env` file in the root directory and add the following variables:
+3. Configure environment variables:
+    Create a `.env` file in the root directory with the following variables:
     ```env
-    GEMINI_API_KEY=your_gemini_api_key
-    RESEND_API_KEY=your_resend_api_key
-    CLERK_API_KEY=your_clerk_api_key
-    DATABASE_URL=your_database_url
+    DATABASE_URL=
+    DIRECT_URL=
+
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+    CLERK_SECRET_KEY=
+    NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+    NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+    NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/onboarding
+    NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/onboarding
+
+    GEMINI_API_KEY=
+    RESEND_API_KEY=
+    ARCJET_KEY=
     ```
 
-4. Run the development server:
+4. Start the development server:
     ```bash
     npm run dev
     ```
 
 ## Usage
 
-### Authentication
+### Intelligent Authentication
 
-The application uses Clerk for user authentication. Users can sign in and manage their accounts securely.
+WealthGenix implements Clerk for secure user authentication, providing features like:
+- Multi-factor authentication
+- Social login integration
+- Secure session management
+- Custom onboarding flows
 
-### Transactions
+### Smart Transaction Management
 
-Users can create, update, and delete transactions. Transactions can be categorized as income or expense, and users can view their transaction history.
+- Automated transaction categorization using AI
+- Real-time transaction tracking and analysis
+- Custom category creation and management
+- Detailed transaction history with search and filter capabilities
 
-### Budget Tracking
+### AI-Powered Budget Tracking
 
-Users can set a monthly budget and track their expenses against the budget. The application provides insights into spending patterns.
+- Intelligent budget recommendations based on spending patterns
+- Real-time budget monitoring and alerts
+- Visual budget analytics and forecasting
+- Category-wise budget allocation
 
-### Receipt Scanning
+### Advanced Receipt Processing
 
-Users can upload receipt images, and the application will extract transaction details using Google Generative AI.
+- Instant receipt scanning with OCR technology
+- AI-powered data extraction for transaction details
+- Automatic categorization of expenses
+- Digital receipt storage and organization
 
-### Email Notifications
+### Automated Notifications
 
-The application can send email notifications for various events using the Resend service.
+- Customizable financial alerts
+- Monthly financial report generation
+- Budget threshold notifications
+- Transaction confirmation alerts
 
 ## API Endpoints
 
 ### Transactions
+- `POST /api/transactions`: Create a new transaction with AI categorization
+- `GET /api/transactions/:id`: Retrieve transaction details with insights
+- `PUT /api/transactions/:id`: Update transaction information
+- `DELETE /api/transactions/:id`: Remove a transaction
 
-- `POST /api/transactions`: Create a new transaction.
-- `GET /api/transactions/:id`: Get details of a specific transaction.
-- `PUT /api/transactions/:id`: Update a transaction.
-- `DELETE /api/transactions/:id`: Delete a transaction.
+### Financial Accounts
+- `POST /api/accounts`: Add a new financial account
+- `GET /api/accounts`: Retrieve all linked accounts
+- `GET /api/accounts/:id`: Get specific account details
+- `PUT /api/accounts/:id`: Update account information
+- `DELETE /api/accounts/:id`: Remove an account
 
-### Accounts
+### Budget Management
+- `GET /api/budgets/current`: Get current budget with AI insights
+- `PUT /api/budgets`: Update budget allocations
+- `GET /api/budgets/analysis`: Get AI-powered budget analysis
 
-- `POST /api/accounts`: Create a new account.
-- `GET /api/accounts`: Get a list of user accounts.
-- `GET /api/accounts/:id`: Get details of a specific account.
-- `PUT /api/accounts/:id`: Update an account.
-- `DELETE /api/accounts/:id`: Delete an account.
-
-### Budgets
-
-- `GET /api/budgets/current`: Get the current budget.
-- `PUT /api/budgets`: Update the budget.
-
-### Receipt Scanning
-
-- `POST /api/receipts/scan`: Scan a receipt and extract transaction details.
+### Receipt Processing
+- `POST /api/receipts/scan`: Process and analyze receipt images
+- `GET /api/receipts/history`: View processed receipt history
 
 ## Environment Variables
 
-- `GEMINI_API_KEY`: API key for Google Generative AI.
-- `RESEND_API_KEY`: API key for Resend service.
-- `CLERK_API_KEY`: API key for Clerk authentication.
-- `DATABASE_URL`: URL for the database connection.
+- `DATABASE_URL`: PostgreSQL database connection URL
+- `DIRECT_URL`: Direct database connection URL
+- `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`: Public key for Clerk authentication
+- `CLERK_SECRET_KEY`: Secret key for Clerk authentication
+- `GEMINI_API_KEY`: API key for Google's Generative AI services
+- `RESEND_API_KEY`: API key for email notification service
+- `ARCJET_KEY`: API key for rate limiting protection
 
 ## Contributing
 
-Contributions are welcome! Please follow these steps to contribute:
+We welcome contributions to WealthGenix! Please follow these steps:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add new feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Open a pull request.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-
-
-### Make sure to create a `.env` file with following variables -
-
-```
-DATABASE_URL=
-DIRECT_URL=
-
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/onboarding
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/onboarding
-
-GEMINI_API_KEY=
-
-RESEND_API_KEY=
-
-ARCJET_KEY=
-```
+For major changes, please open an issue first to discuss what you would like to change.
